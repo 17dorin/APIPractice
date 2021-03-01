@@ -1,0 +1,7 @@
+﻿@model Weather
+
+<h2>Weekly forecast</h2>
+@foreach(Period p in Model.properties.periods)
+{
+    <p>@p.name:  @p.detailedForecast</p>
+}
